@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Authentication.SignUpLogin"
+    tools:showIn="@layout/activity_sign_up_login">
+
+    <Button
+        android:id="@+id/btSignUp"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/orLine"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/signup_1" />
+
+    <View
+        android:id="@+id/blackLine"
+        android:layout_width="282dp"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp"
+        android:background="@color/blackColor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="@string/already_a_member"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/login_1" />
+
+    <ImageView
+        android:id="@+id/orLine"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="219dp"
+        android:background="@drawable/or_bar" />
+
+    <LinearLayout
+        android:id="@+id/socialButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="139dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btFacebook"
+            android:layout_width="155dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/facebook" />
+
+        <Button
+            android:id="@+id/btGoogle"
+            android:layout_width="155dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/google" />
+    </LinearLayout>
+
+</RelativeLayout>

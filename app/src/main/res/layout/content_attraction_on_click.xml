@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AttractionOnClick"
+    tools:showIn="@layout/activity_attraction_on_click">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="1dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/attractionViewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v4.view.ViewPager>
+
+                        <me.relex.circleindicator.CircleIndicator
+                            android:id="@+id/attractionCircleIndicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="14dp">
+
+                        </me.relex.circleindicator.CircleIndicator>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/hotspotName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="198dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="Khalsa College"
+                        android:textAlignment="center"
+                        android:textColor="@color/blackColor"
+                        android:textSize="35sp" />
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:id="@+id/scrollAboutHotspot"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/hotspotName"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/aboutHotspot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:text="@string/khalsa_college_about"
+                            android:textColor="@color/blackColor"
+                            android:textSize="18sp" />
+                    </android.support.v4.widget.NestedScrollView>
+
+                    <LinearLayout
+                        android:id="@+id/hotspotBestTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/scrollAboutHotspot"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/hotspotBest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:text="Best Time to Visit: "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hotspotTiming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:text="Time"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hotspotBestTime"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/hotspotCab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cab" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="CAB"
+                                android:textColor="@color/blackColor"
+                                android:textSize="19sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/hotspotDirections"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/directions" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Directions"
+                                android:textColor="@color/blackColor"
+                                android:textSize="19sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.CardView>

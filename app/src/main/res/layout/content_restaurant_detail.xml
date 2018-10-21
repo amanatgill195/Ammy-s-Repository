@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RestaurantDetail"
+    tools:showIn="@layout/activity_restaurant_detail">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshRestaurantDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <android.support.v4.view.ViewPager
+                                        android:id="@+id/restrauntImageViewPager"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="275dp" />
+
+                                    <me.relex.circleindicator.CircleIndicator
+                                        android:id="@+id/viewPagerDots"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="28dp"
+                                        android:layout_marginTop="215dp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="275dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="277dp"
+                                        android:elevation="50dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="292dp"
+                                            android:layout_marginTop="30dp">
+
+                                            <TextView
+                                                android:id="@+id/txtRestrauntName"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/restrauntImageViewPager"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginLeft="8dp"
+                                                android:layout_marginRight="8dp"
+                                                android:fontFamily="@font/quicksand_regular"
+                                                android:text="The Capital Grill"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/blackColor"
+                                                android:textSize="35sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="NotSibling" />
+
+                                            <TextView
+                                                android:id="@+id/restrauntAddress"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/txtRestrauntName"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="10dp"
+                                                android:text="Ranjit Avenue,Amritsar"
+                                                android:textSize="18sp" />
+
+                                            <View
+                                                android:id="@+id/view1"
+                                                android:layout_width="306dp"
+                                                android:layout_height="2dp"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="77dp"
+                                                android:background="@color/textColorPrimary" />
+
+                                            <LinearLayout
+                                                android:id="@+id/txtTimings"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="88dp"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/restrauntStatus1"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Open Now"
+                                                    android:textColor="#39b54a"
+                                                    android:textSize="20sp" />
+
+                                                <TextView
+                                                    android:id="@+id/restauntTimings"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="11dp"
+                                                    android:text="10AM-9PM(SAT)"
+                                                    android:textSize="20sp" />
+                                            </LinearLayout>
+
+                                            <View
+                                                android:id="@+id/view2"
+                                                android:layout_width="306dp"
+                                                android:layout_height="2dp"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="127dp"
+                                                android:background="@color/textColorPrimary" />
+
+                                            <LinearLayout
+                                                android:id="@+id/imageButtons"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_marginLeft="8dp"
+                                                android:layout_marginRight="8dp"
+                                                android:layout_marginBottom="49dp"
+                                                android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1.0"
+                                                    android:orientation="vertical">
+
+                                                    <ImageButton
+                                                        android:id="@+id/ibCall"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:background="@drawable/call" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="18dp"
+                                                        android:layout_marginTop="10dp"
+                                                        android:fontFamily="@font/quicksand_regular"
+                                                        android:text="Call"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="13dp"
+                                                    android:layout_weight="1.0"
+                                                    android:orientation="vertical">
+
+                                                    <ImageButton
+                                                        android:id="@+id/ibCab"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:background="@drawable/cab"
+                                                        android:contentDescription="TODO" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="18dp"
+                                                        android:layout_marginTop="10dp"
+                                                        android:fontFamily="@font/quicksand_regular"
+                                                        android:text="Cab"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1.0"
+                                                    android:orientation="vertical">
+
+                                                    <ImageButton
+                                                        android:id="@+id/ibDirections"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="15dp"
+                                                        android:background="@drawable/directions" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="10dp"
+                                                        android:fontFamily="@font/quicksand_regular"
+                                                        android:text="Directions"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1.0"
+                                                    android:orientation="vertical">
+
+                                                    <ImageButton
+                                                        android:id="@+id/ibFavorites"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:background="@drawable/favourite" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="10dp"
+                                                        android:fontFamily="@font/quicksand_regular"
+                                                        android:text="Bookmark"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </RelativeLayout>
+                                    </android.support.v7.widget.CardView>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="250dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/avgButton"
+                                android:layout_width="80dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/rating_button"
+                                android:textColor="@color/whiteColor" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtAverageRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="7dp"
+                            android:text=""
+                            android:textColor="@color/whiteColor"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/restrauntImageViewPager"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardMaxElevation="1dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtAbout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="About Place"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtAboutPlace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtAbout"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="The original Capital Grille was founded by Ned Grace, in Providence, Rhode Island, in 1990.The opening was curious for several reasons: the upscale steakhouse contrasted with the then-rundown downtown area of Providence, and the opening occurred amidst an ongoing recession. Grace envisioned the restaurant being popular with business and political elite, and proved to be accurate. Seven years after opening, the original location pulled in over $4 million in annual sales."
+                                android:textColor="@color/blackColor"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:id="@+id/Menu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_below="@id/txtAboutPlace"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="MENU"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/restaurant_menu_recycler_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp">
+
+                                </android.support.v7.widget.RecyclerView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Button
+                        android:id="@+id/btOrderNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rating_button"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="ORDER NOW"
+                        android:textColor="#FFFFFF" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardMaxElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Specials"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtSpecials"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="Menu Items"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Estimated Cost"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/estimatedCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Rs. 500 for two(approx.)"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Payment Options"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/paymentOptions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Cash/Card Accepted"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="More Info"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Reservation"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_check_circle_24dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Home Delivery Available"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_check_circle_24dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sunday Open"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_cancel_24dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Address"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/restrauntFullAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="SCO-1234, A-Block, Ranjit Avenue,Amritsar"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fadingEdge="horizontal"
+                        app:cardElevation="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/imageButtons1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/ibCall1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/call" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Call"
+                                    android:textColor="@color/blackColor"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="13dp"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/ibCab1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/cab"
+                                    android:contentDescription="TODO" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Cab"
+                                    android:textColor="@color/blackColor"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/ibDirections1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:background="@drawable/directions" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Directions"
+                                    android:textColor="@color/blackColor"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/ibFavorites1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:background="@drawable/favourite" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Favorites"
+                                    android:textColor="@color/blackColor"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardMaxElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Rate this Restaurant"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RatingBar
+                                    android:id="@+id/ratingStar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:isIndicator="false"
+                                    android:numStars="5"
+                                    android:stepSize="0.5" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Leave a Comment"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etRestrauntComment"
+                                android:layout_width="350dp"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:hint="Leave a Comment..."
+                                android:maxLength="150" />
+
+                            <Button
+                                android:id="@+id/btComment"
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/rating_button"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Submit"
+                                android:textColor="@color/whiteColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:text="Customer Reviews"
+                                android:textColor="@color/blackColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/commentRecyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardMaxElevation="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report on error/issue?" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

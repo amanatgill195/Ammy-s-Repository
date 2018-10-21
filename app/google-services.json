@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "542115125027",
+    "firebase_url": "https://citytour-fba3a.firebaseio.com",
+    "project_id": "citytour-fba3a",
+    "storage_bucket": "citytour-fba3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542115125027:android:ce8e7778ddfefebd",
+        "android_client_info": {
+          "package_name": "com.example.amanat.citytour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542115125027-qisbt5u8dtrlfsr7gg9rapqdokgh69cs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amanat.citytour",
+            "certificate_hash": "452684dd96a595e69aa654e25d8c915edc79aa10"
+          }
+        },
+        {
+          "client_id": "542115125027-ov903pufsmifarbfnvn63jfjeqs2ki7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARAwcfereQF5ee5Nq2nViHWnmOxn2cu0c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542115125027-ov903pufsmifarbfnvn63jfjeqs2ki7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

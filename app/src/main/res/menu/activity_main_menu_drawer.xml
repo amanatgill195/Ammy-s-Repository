@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about_city"
+            android:icon="@drawable/ic_all_inclusive_pink_24dp"
+            android:title="About City" />
+        <item
+            android:id="@+id/nav_attractions"
+            android:icon="@drawable/ic_location_city_pink_24dp"
+            android:title="Attractions" />
+        <item
+            android:id="@+id/nav_restaurants"
+            android:icon="@drawable/ic_restaurant_pink_24dp"
+            android:title="Restaurants" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_bookmark_border_pink_24dp"
+            android:title="BookMarked Restaurants" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

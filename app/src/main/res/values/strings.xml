@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">CityTour</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up_login">SignUpLogin</string>
+    <string name="amritsar">AMRITSAR</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="i_agree_to_terms_amp_conditions"><![CDATA[I agree to terms & Conditions]]></string>
+    <string name="phone_mobile">Phone/Mobile</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="e_mail_id">E-mail id</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="forget_password">forget Password?</string>
+    <string name="title_activity_forget_password">ForgetPassword</string>
+    <string name="already_a_member">already a member?</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="accessibility_overflow">overflowButton</string>
+    <string name="title_activity_about_the_city">AboutTheCity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="title_activity_restaurant_swiper">Restaurants</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_attractions">Attractions</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_restaurant_detail">RestaurantDetail</string>
+    <string name="about_city_text">Amritsar is the largest and most important city in Punjab and is a major commercial, cultural, and transportation centre. It is also the centre of Sikhism and the site of the Sikhs’ principal place of worship—the Harmandir Sahib or The Golden Temple. Amritsar was founded in 1577 by Guru Ram Das, fourth Guru of the Sikhs, on a site granted by the Mughal emperor Akbar. Ram Das ordered the excavation of the sacred tank, or pool, called the Amrita Saras (“Pool of Nectar”), from which the city’s name is derived. A temple was erected on an island in the tank’s centre by Arjan, the fifth Guru of the Sikhs, which was then reached by a marble causeway. During the reign of Maharaja Ranjit Singh (1801–39), the upper part of the temple was decorated with a gold-foil-covered copper dome, and since then the building has been popularly known as the Golden Temple. Amritsar became the centre of the Sikh faith, and, as the focus of growing Sikh power, the city experienced a corresponding increase in trade. This important Sikh shrine attracts more than 100,000 visitors on weekdays alone and is the most popular destination for non-resident Indians (NRI) in the whole of India. The city also houses the Akal Takht Sahib, the highest seat of earthly authority of the Khalsa, and the committee responsible for the upkeep of Gurdwaras. Amritsar\'s central walled city has narrow streets mostly developed in the 17th and 18th century. The city is a peculiar example of an introverted planning system with unique areas called Katras. The Katras are self-styled residential units that provided unique defence system during attacks on the city. The Ram Teerath situated at Amritsar is believed to be the Ashram site of Maharishi Valmiki, the writer of Ramayana. As per the Ramayana, Sita gave birth to Lava and Kusha, sons of lord Rama at Ramtirth ashram. The main commercial activities of Amritsar include tourism, carpets and fabrics, farm produce, handicrafts, service trades, and light engineering. The city is known for its rich cuisines, culture, and for the Jallianwala Bagh massacre in 1919 under British Rule. Amritsar is home to Central Khalsa Orphanage, which was once home to Udham Singh, a prominent figure in the Indian independence movement. Gandhi Ground is the main sports complex in the city which is home to the Amritsar Games Association, (AGA).</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="title_activity_attraction_on_click">AttractionOnClick</string>
+    <string name="title_activity_restaurant_menu_full_screen">RestaurantMenuFullScreen</string>
+    <string name="title_activity_bookmark_restaurants">BookmarkRestaurants</string>
+    <string name="khalsa_college_about">Khalsa College is a historic educational institution in the northern Indian city of Amritsar in the state of Punjab, India. Founded in 1892, the sprawling 300-acre (1.2 km2) campus is located about eight kilometers from the city-center on the Amritsar-Lahore highway (part of the Grand Trunk Road), adjoining Guru Nanak Dev University campus, to which Khalsa College is academically affiliated. Khalsa College was built as an educational institute during the British Raj in India when Sikh scholars thought about providing higher education to Sikhs and Punjabis within Punjab. Amritsar was chosen for its establishment and Singh Sabha Movement and Chief Khalsa Diwan approached the then Sikh Maharajas and Sikh people of Punjab to raise funds and donate land to build this unique institute. People of Amritsar, Lahore and other cities of Punjab including rich Sikh families and Maharajas donated land and raised funds to build Khalsa College, Amritsar. Its architectural design was created by Ram Singh, a famous architect who also designed one of the Places in England. Its building was completed in 1911–12. Its architectural features are mix of British, Mughal and Sikh architect. Khalsa college\'s contribution towards the freedom history of India is significant as it has generated many famous freedom fighters, political leaders, armed forces generals, scientists, famous players-Olympians, actors, writers, journalists and scholars. More information about Khalsa college can be found in the book \'History of Khalsa College Amritsar,\' written by Dr. Ganda Singh, former head of the dept. of Sikh History, Khalsa College Amritsar. In modern times, the only research work on Khalsa College\'s history, \'The Temple of Study-Khalsa College Amritsar,\' was performed by Jaspreet Singh Rajpoot, an alumnus of Khalsa, in the year 2002 with the collaboration of Khalsa College governing council and Dr. Mohinder Singh Dhillon (the then Principal of KCA), reveals the facts of Khalsa college which are still unknown to most of the people around the world.</string>
+</resources>
